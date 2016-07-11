@@ -41,6 +41,7 @@ public class SocketClientRunnable implements Runnable {
             msg.obj=socket;
             //传递socket给主线程
             mMainThreadHandler.sendMessage(msg);
+
         } catch (IOException e) {
             //连接失败
             Message msg = Message.obtain();
